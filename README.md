@@ -8,3 +8,12 @@ Chi vorrà proporre le proprie idee e/o effettuare il commit di nuovo codice pot
 Il progetto si riferisce all'articolo comparso sul periodico Italiano GNU/Linux Magazine Italia, numero copertina 173, Marzo/Aprile 2017:
 
 http://arretrati.edmaster.it/index.php?sez=&cat=3&prod=5&num=173
+
+### ROADMAP ###
+
+- Terminato: Funzioni basilari (mantenere il tempo, visualizzare l'orario e il numero di battute per misura)
+
+- Da fare:
+-- Marcatura grafica delle battute nella misura;
+-- Marcatura acutica in ottavi, terzine di ottavi e sedicesimi (anche le quintine?)
+-- ....
