@@ -11,9 +11,10 @@ http://arretrati.edmaster.it/index.php?sez=&cat=3&prod=5&num=173
 
 ### ROADMAP ###
 
-- Terminato: Funzioni basilari (mantenere il tempo, visualizzare l'orario e il numero di battute per misura)
+- Terminato 21/03/2017: Funzioni basilari (mantenere il tempo, visualizzare l'orario e il numero di battute per misura)
 
 - Da fare:
--- Marcatura grafica delle battute nella misura;
--- Marcatura acutica in ottavi, terzine di ottavi e sedicesimi (anche le quintine?)
--- ....
+- Marcatura grafica delle battute nella misura;
+- Marcatura acutica in ottavi, terzine di ottavi e sedicesimi (anche le quintine?)
+- Utilizzo del pulsante integrato nell'encoder per il setup del metronomo (variazione numero di battute, regolazione marcatura acustica, orario ...);
+- ...
