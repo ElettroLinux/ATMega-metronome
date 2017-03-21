@@ -178,7 +178,7 @@ void loop()
       if (beats==0)
       {
         //
-        // tone(8, NOTE_G7, BEEP_TIME);
+        tone(8, NOTE_G7, BEEP_TIME);
         //
         digitalWrite(LED_ROSSO,HIGH);       
       }
@@ -187,7 +187,7 @@ void loop()
       else
       {
         //
-        // tone(8, NOTE_C5, BEEP_TIME);
+        tone(8, NOTE_C5, BEEP_TIME);
         //
         digitalWrite(LED_VERDE,HIGH);
       }
