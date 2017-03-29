@@ -377,17 +377,23 @@ void updateEncoderA()
   // al datasheet del microncontrollore a pagina 14, paragrafo 5.1).
   read_value=PIND & 0xC;
   // Verifichiamo se entrambi i pin associati ai due interrupt esterni si trovino in uno stato
-  // alto (condiziona logica 1) nel qual caso o meno check that we have both pins at detent (HIGH) and that we are expecting detent on this pin's rising edge
+  // alto (condiziona logica 1).
   if (read_value == 0b00001100 && A_state)
   {
-    bpm--;
+    // Imponiamo un limite inferiore ai bpm e pari a 30. In sostanza nel ruotare in senso
+    // antiorario l'encoder il valore della variabile 'bpm' diminuira per ognli "click" di
+    // un valore, ma arrivato a 30 non potrà più ridursi. Stessa cosa verrà fatta per il
+    // limite superiore nell'altra ISR, limite che verrà imposto a 260 bpm.
+    if (bpm > 30) bpm--;
+    else if (bpm == 30) bpm=30;
     // Azzeriamo le due variabili di appoggio in attesa di un successivo segnale esterno.
     // Poiché le due variabili vengono utilizzate tra le due ISR, all'inizio del sorgente
     // le abbiamo dichiarate 'volatile'.
     B_state=0;
     A_state=0;
   }
-  // Se il pin B dell'encoder è invece al livello basso impostiamo la variabile XXXX a 1signal that we're expecting pinB to signal the transition to detent from free rotation
+  // Se il pin B dell'encoder è invece al livello basso impostiamo la variabile 'B_state'
+  // a 1.
   else if (read_value == 0b00000100) B_state=1;
   // La funzione 'sei()' abilita nuovamente gli interrupt affinché il microcontrollore possa
   // catturarne di nuovi all'occorrenza (esterni e/o interni che siano). Questo fa intuire il
@@ -405,7 +411,8 @@ void updateEncoderB()
   read_value=PIND & 0xC;
   if (read_value == 0b00001100 && B_state)
   {
-    bpm++;
+    if (bpm < 260) bpm++;
+    else if(bpm == 260) bpm=260;
     B_state=0;
     A_state=0;
   }
