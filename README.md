@@ -1,13 +1,14 @@
 # ATMega-metronome
 A metronome with ATMega uC
 
-Dei sorgenti ne verrà effettuato il commit nelle prossime ore.
+Chi vorrà proporre le proprie idee e/o effettuare il commit di nuovo codice potrà chiedere direttamente all'autore al fine di farsi concedere i permessi necessari. Le richieste possono essere effettuate attraverso due noti forum Italiani:
 
-Chi vorrà proporre le proprie idee e/o effettuare il commit di nuovo codice potrà chiedere direttamente all'autore al fine di farsi concedere i permessi necessari.
+- http://www.linux-magazine.it/forum/
 
-Il progetto si riferisce all'articolo comparso sul periodico Italiano GNU/Linux Magazine Italia, numero copertina 173, Marzo/Aprile 2017:
+- http://www.ioprogrammo.it/
 
-http://arretrati.edmaster.it/index.php?sez=&cat=3&prod=5&num=173
+dedicati rispettivamente a GNU/Linux e alla programmazione in generale (secondo link).
+
 
 ### ROADMAP ###
 
