@@ -7,7 +7,7 @@ Chi vorrà proporre le proprie idee e/o effettuare il commit di nuovo codice pot
 
 - http://www.ioprogrammo.it/
 
-dedicati rispettivamente a GNU/Linux e alla programmazione in generale (secondo link).
+dedicati rispettivamente a GNU/Linux e alla programmazione in particolare.
 
 
 ### ROADMAP ###
@@ -16,6 +16,6 @@ dedicati rispettivamente a GNU/Linux e alla programmazione in generale (secondo 
 
 - Da fare:
 - Marcatura grafica delle battute nella misura;
-- Marcatura acutica in ottavi, terzine di ottavi e sedicesimi (anche le quintine?)
+- Marcatura acustica in ottavi, terzine di ottavi e sedicesimi (anche le quintine?)
 - Utilizzo del pulsante integrato nell'encoder per il setup del metronomo (variazione numero di battute, regolazione marcatura acustica, orario ...);
 - ...
